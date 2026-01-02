@@ -53,15 +53,17 @@ export default function Philosophy() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.2, duration: 0.6 }}
-                                className="bg-white/60 backdrop-blur-sm p-6 rounded-xl border border-stone hover:border-bamboo/50 transition-colors shadow-sm"
+                                className="magic-card p-[1px]" // p-[1px] creates the border effect from the background
                             >
-                                <div className="flex items-start gap-4">
-                                    <div className="p-3 bg-bamboo/10 rounded-full text-bamboo">
-                                        <item.icon size={24} />
-                                    </div>
-                                    <div>
-                                        <h4 className="text-xl font-serif text-ink mb-2">{item.title}</h4>
-                                        <p className="text-base md:text-lg text-charcoal/90 font-normal">{item.desc}</p>
+                                <div className="magic-card-inner p-6 h-full flex flex-col justify-center">
+                                    <div className="flex items-start gap-4">
+                                        <div className="p-3 bg-bamboo/10 rounded-full text-bamboo shrink-0">
+                                            <item.icon size={24} />
+                                        </div>
+                                        <div>
+                                            <h4 className="text-xl font-serif text-ink mb-2">{item.title}</h4>
+                                            <p className="text-base md:text-lg text-charcoal/90 font-normal">{item.desc}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </motion.div>
