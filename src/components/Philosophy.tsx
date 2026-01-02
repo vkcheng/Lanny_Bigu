@@ -38,7 +38,7 @@ export default function Philosophy() {
                                 Scientific Fasting
                             </span>
                         </h2>
-                        <p className="text-lg text-charcoal leading-loose mb-8">
+                        <p className="text-xl md:text-2xl text-charcoal leading-loose mb-8 font-normal">
                             辟谷（科学断食），不是简单的“不吃饭”。它是一种通过调整饮食结构和作息节奏，帮助身体启动脂肪代谢系统的方法。
                             <br /><br />
                             我们不是“速效减重”，而是教你理解身体、掌握节奏，轻盈地过一生。
@@ -61,7 +61,7 @@ export default function Philosophy() {
                                     </div>
                                     <div>
                                         <h4 className="text-xl font-serif text-ink mb-2">{item.title}</h4>
-                                        <p className="text-charcoal/80 font-light">{item.desc}</p>
+                                        <p className="text-base md:text-lg text-charcoal/90 font-normal">{item.desc}</p>
                                     </div>
                                 </div>
                             </motion.div>

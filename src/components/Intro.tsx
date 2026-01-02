@@ -16,15 +16,15 @@ export default function Intro() {
                     你是不是也有这样的经历？
                 </h3>
 
-                <p className="text-lg md:text-xl text-charcoal font-light leading-loose max-w-3xl">
+                <p className="text-xl md:text-2xl text-charcoal font-normal leading-loose max-w-3xl">
                     节食、运动、断糖……试过无数方法，却总是反弹，甚至越减越累。<br className="hidden md:block" />
-                    最痛苦的是：<span className="text-cinnabar font-normal">明明已经很努力，却始终瘦不下来</span>，<br />
+                    最痛苦的是：<span className="text-cinnabar font-medium">明明已经很努力，却始终瘦不下来</span>，<br />
                     健康状况也越来越差。
                 </p>
 
                 <div className="w-16 h-1 bg-stone mx-auto my-8 rounded-full" />
 
-                <p className="text-lg md:text-xl text-ink font-serif leading-relaxed">
+                <p className="text-xl md:text-2xl text-ink font-serif leading-relaxed">
                     其实，真正的减脂，不是“饿自己”，也不是“拼命燃烧”。<br />
                     我们身体本来就有天然的自愈系统，<br />
                     只是你还没找到<span className="border-b border-bamboo pb-0.5">“启动它”的方法</span>。

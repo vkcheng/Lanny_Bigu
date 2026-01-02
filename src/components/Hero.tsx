@@ -30,13 +30,15 @@ export default function Hero() {
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="flex flex-col items-center gap-6"
                 >
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-ink tracking-wide">
-                        忆养身心
+                    <h1 className="flex flex-col items-center">
+                        <span className="text-5xl md:text-7xl lg:text-8xl font-serif text-ink tracking-wide">
+                            忆养身心
+                        </span>
+                        <span className="h-px w-24 bg-cinnabar/60 my-6 block" aria-hidden="true" />
+                        <span className="text-5xl md:text-7xl lg:text-8xl font-serif text-ink tracking-wide">
+                            辟谷学院
+                        </span>
                     </h1>
-                    <div className="h-px w-24 bg-cinnabar/60 my-2" />
-                    <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif text-ink tracking-wide mt-4">
-                        辟谷学院
-                    </h2>
                 </motion.div>
 
                 <motion.p

@@ -19,7 +19,7 @@ export default function Profile() {
                 >
                     <Image
                         src="https://akovkxdzyilbwfaauyhz.supabase.co/storage/v1/object/public/images/about/Lanny.jpg"
-                        alt="Lanny - 辟谷咨询顾问"
+                        alt="Lanny Lim 老师 - 资深辟谷咨询顾问"
                         fill
                         className="object-cover object-top"
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -38,10 +38,10 @@ export default function Profile() {
                         <h2 className="text-4xl font-serif text-ink">Lanny · 辟谷咨询顾问</h2>
                     </div>
 
-                    <p className="text-charcoal leading-loose font-light">
+                    <p className="text-lg md:text-xl text-charcoal leading-loose font-normal">
                         大家好，我是 Lanny。过去 9 年，我专注于中式养生与体重管理。我曾陪伴无数学员，通过安全、温和的方法，走上健康瘦身的道路——不节食、不反弹。
                     </p>
-                    <p className="text-charcoal leading-loose font-light">
+                    <p className="text-lg md:text-xl text-charcoal leading-loose font-normal">
                         如果你也正经历反复减肥的困扰，欢迎加入我们的辟谷体验。我会用耐心和实际经验，陪你一起找回对身体的信任与热爱。
                     </p>
 
@@ -51,7 +51,7 @@ export default function Profile() {
                                 <BookOpen size={120} />
                             </div>
                             <h3 className="text-xl font-serif text-ink mb-2">📘 免费领取《现代辟谷入门电子书》</h3>
-                            <p className="text-sm text-charcoal/70 mb-4">帮助你快速了解辟谷的原理与做法</p>
+                            <p className="text-base text-charcoal/85 mb-4 font-normal">帮助你快速了解辟谷的原理与做法</p>
                             <a
                                 href="https://wa.me/60128052250?text=From%20lannybigu.com%20我想取得现代辟谷入门电子书"
                                 target="_blank"

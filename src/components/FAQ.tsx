@@ -51,21 +51,23 @@ export default function FAQ() {
                         key={index}
                         className="border-b border-stone last:border-none"
                     >
-                        <button
-                            onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                            className="w-full flex items-center justify-between py-6 text-left group"
-                        >
-                            <span className={`text-lg transition-colors ${openIndex === index ? "text-cinnabar font-medium" : "text-ink group-hover:text-cinnabar/80"}`}>
-                                {item.q}
-                            </span>
-                            <motion.span
-                                animate={{ rotate: openIndex === index ? 180 : 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="text-stone group-hover:text-cinnabar transition-colors"
+                        <h3 className="m-0 p-0 text-base font-normal">
+                            <button
+                                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                                className="w-full flex items-center justify-between py-6 text-left group"
                             >
-                                <ChevronDown />
-                            </motion.span>
-                        </button>
+                                <span className={`text-lg transition-colors ${openIndex === index ? "text-cinnabar font-medium" : "text-ink group-hover:text-cinnabar/80"}`}>
+                                    {item.q}
+                                </span>
+                                <motion.span
+                                    animate={{ rotate: openIndex === index ? 180 : 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="text-stone group-hover:text-cinnabar transition-colors"
+                                >
+                                    <ChevronDown />
+                                </motion.span>
+                            </button>
+                        </h3>
                         <AnimatePresence>
                             {openIndex === index && (
                                 <motion.div
