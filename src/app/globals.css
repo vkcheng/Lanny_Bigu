@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-rice: #F9F7F2;      /* Off-white background */
+  --color-ink: #1F1F1F;       /* Primary text */
+  --color-charcoal: #5C5C5C;  /* Secondary text */
+  --color-cinnabar: #8B3A3A;  /* Accent Red */
+  --color-bamboo: #6A7B68;    /* Accent Green */
+  --color-stone: #E5E0D8;     /* Border */
+  
+  /* Fonts */
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+
+  /* Animations */
+  --animate-fade-in: fade-in 0.8s ease-out forwards;
+  --animate-slide-up: slide-up 1s ease-out forwards;
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  .text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+body {
+  background-color: var(--color-rice);
+  color: var(--color-ink);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
