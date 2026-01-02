@@ -33,8 +33,8 @@ export default function Testimonials() {
                     </p>
                 </motion.div>
 
-                {/* Masonry Grid using Tailwind columns */}
-                <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+                {/* Grid Layout - Changed from columns to grid for balanced accumulation */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {testimonialImages.map((src, index) => (
                         <motion.div
                             key={index}
@@ -42,7 +42,7 @@ export default function Testimonials() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.6 }}
-                            className="break-inside-avoid relative group rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                            className="relative group rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                         >
                             <Image
                                 src={src}

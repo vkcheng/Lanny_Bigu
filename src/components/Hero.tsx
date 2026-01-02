@@ -34,7 +34,7 @@ export default function Hero() {
                         忆养身心
                     </h1>
                     <div className="h-px w-24 bg-cinnabar/60 my-2" />
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-charcoal tracking-[0.2em]">
+                    <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif text-ink tracking-wide mt-4">
                         辟谷学院
                     </h2>
                 </motion.div>
