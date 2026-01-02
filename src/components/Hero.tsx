@@ -2,13 +2,25 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden">
-            {/* Background Decorative Elements */}
-            <div className="absolute top-0 right-0 w-1/3 h-full bg-linear-to-b from-stone/10 to-transparent pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-linear-to-t from-bamboo/5 to-transparent pointer-events-none rounded-full blur-3xl" />
+        <section className="relative h-[65vh] min-h-[500px] w-full flex flex-col items-center justify-center overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="https://akovkxdzyilbwfaauyhz.supabase.co/storage/v1/object/public/images/hero/Lanny_Bigu_hero-min.png"
+                    alt="Lanny Bigu Hero Background"
+                    fill
+                    className="object-cover object-center opacity-90"
+                    priority
+                    quality={100}
+                />
+                {/* Gradient Overlays for Readability */}
+                <div className="absolute inset-0 bg-white/40 mix-blend-overlay" />
+                <div className="absolute inset-0 bg-linear-to-b from-rice/60 via-rice/30 to-rice/90" />
+            </div>
 
             {/* Main Content */}
             <div className="z-10 text-center space-y-8 md:space-y-12">

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { BookOpen, MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 export default function Profile() {
     return (
@@ -16,11 +17,13 @@ export default function Profile() {
                     transition={{ duration: 0.8 }}
                     className="w-full max-w-md md:w-1/2 relative aspect-[3/4] md:aspect-square rounded-2xl overflow-hidden bg-stone/20"
                 >
-                    {/* Ideally we would have an image of Lanny here. Using a stylized placeholder wrapper. */}
-                    <div className="absolute inset-0 flex items-center justify-center text-stone font-serif text-3xl opacity-20 bg-linear-to-tr from-stone/30 to-white/50">
-                        Lanny 老师
-                    </div>
-                    {/* <Image src="/lanny-portrait.jpg" alt="Lanny" fill className="object-cover" /> */}
+                    <Image
+                        src="https://akovkxdzyilbwfaauyhz.supabase.co/storage/v1/object/public/images/about/Lanny.jpg"
+                        alt="Lanny - 辟谷咨询顾问"
+                        fill
+                        className="object-cover object-top"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                    />
                 </motion.div>
 
                 <motion.div
@@ -43,7 +46,7 @@ export default function Profile() {
                     </p>
 
                     <div className="pt-6">
-                        <div className="p-6 bg-rice border border-stone rounded-xl relative overflow-hidden group hover:border-cinnabar/30 transition-colors">
+                        <div className="p-6 bg-rice border border-stone rounded-xl relative overflow-hidden group hover:border-cinnabar/30 transition-colors flex flex-col items-center text-center">
                             <div className="absolute -right-4 -top-4 text-stone/10 group-hover:text-cinnabar/5 transition-colors">
                                 <BookOpen size={120} />
                             </div>
